@@ -1,0 +1,6 @@
+{
+  "name": "Corte Fino Marmoraria",
+  "description": "Showroom digital premium da Marmoraria Corte Fino com simulador de ambientes, calculadora de orçamento com detalhamento técnico por IA e assistente virtual de design em mármores.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

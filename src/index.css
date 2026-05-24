@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-mono: 'Fira Code', ui-monospace, monospace;
+  
+  --color-gold-50: #fefcf3;
+  --color-gold-100: #fbf5df;
+  --color-gold-200: #f5e6b7;
+  --color-gold-300: #ecd187;
+  --color-gold-400: #e2b757;
+  --color-gold-500: #d49c2f;
+  --color-gold-600: #b87c24;
+  --color-gold-700: #995f1f;
+  --color-gold-800: #7d4d1e;
+  --color-gold-900: #673f1b;
+  
+  --animate-gold-shimmer: shimmer 3s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Base resets & elegant scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d49c2f;
+}
+
+.marble-grid {
+  background-image: radial-gradient(rgba(212, 156, 47, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom premium styles */
+.text-stroke-gold {
+  -webkit-text-stroke: 1px rgba(212, 156, 47, 0.3);
+}
+
+.markdown-body h1, .markdown-body h2, .markdown-body h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  color: #f3f4f6;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown-body h3 {
+  font-size: 1.25rem;
+  border-bottom: 1px solid rgba(212, 156, 47, 0.2);
+  padding-bottom: 0.25rem;
+}
+
+.markdown-body p {
+  color: #d1d5db;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul {
+  list-style-type: disk;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: #e5e7eb;
+}
+
+.markdown-body li {
+  margin-bottom: 0.5rem;
+}
+
+.markdown-body strong {
+  color: #f5e6b7;
+}
